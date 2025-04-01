@@ -70,7 +70,7 @@ export default function BudgetInput({id, purpose, price, detail, isSave, isActiv
                 maxLength="20"
                 value={localPrice}
                 placeholder="금액"
-                onChange={handlePriceChange}ek
+                onChange={handlePriceChange}
                 readOnly={isSave}
             />
             <input
