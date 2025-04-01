@@ -56,9 +56,12 @@ function App() {
 
     return(
         <div>
-            <button onClick={addBudget}>
-                +
-            </button>
+            <div className="addBtnContainer">
+                <button className="addBtn" onClick={addBudget}>
+                    +
+                </button>
+
+            </div>
             <div>
                 {budgetList.map((budgetData) => {
                     return (

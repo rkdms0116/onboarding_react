@@ -56,6 +56,7 @@ export default function BudgetInput({id, purpose, price, detail, isSave, isActiv
     return (
         <div key={id}>
             <input
+                className="purposeInput"
                 type="text"
                 maxLength="20"
                 value={localPurpose}
@@ -64,6 +65,7 @@ export default function BudgetInput({id, purpose, price, detail, isSave, isActiv
                 readOnly={isSave}
             />
             <input
+                className="priceInput"
                 type="text"
                 maxLength="20"
                 value={localPrice}
@@ -72,6 +74,7 @@ export default function BudgetInput({id, purpose, price, detail, isSave, isActiv
                 readOnly={isSave}
             />
             <input
+                className="detailInput"
                 type="text"
                 maxLength="50"
                 value={localDetail}

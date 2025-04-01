@@ -101,6 +101,17 @@ h1{
   width: 100px;
 }
 
+.purposeInput {
+  width: 10%;
+}
+
+.priceInput {
+  width: 10%;
+}
+
+.detailInput {
+  width: 30%;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
