@@ -28,6 +28,79 @@
   color: #61dafb;
 }
 
+button {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #282c34;
+  color: #cccccc;
+  font-size: 16px;
+  outline: none;
+  width: 60px; /* 원하는 너비에 맞게 설정 */
+}
+
+/* 모든 input 요소에 공통 스타일 적용 */
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 16px;
+  outline: none;
+  /*width: 13%; !* 원하는 너비에 맞게 설정 *!*/
+}
+
+input.use{
+  width: 20%;
+}
+
+input.pay{
+  width: 10%;
+}
+
+/* 포커스 시 테두리 색상과 그림자 */
+input:focus {
+  border-color: #4d90fe;
+  box-shadow: 0 0 5px rgba(77, 144, 254, 0.5);
+}
+
+/* type="number"에서 증감 버튼 숨기기 */
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox에서 증감 버튼 숨기기 */
+  -webkit-appearance: none;   /* Safari 및 Chrome에서 증감 버튼 숨기기 */
+  appearance: none;           /* 표준화된 방법 */
+}
+
+/* type="number"에서 증감 버튼을 숨기기 위해 웹킷 기반 브라우저에서 버튼 제거 */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#detail {
+  width: 40%;
+}
+
+h1{
+  background-color: #cccccc;
+  text-align: center;
+}
+
+.addBtnContainer{
+  display: flex;
+  justify-content: flex-end;  /* div 내부의 내용물을 우측 정렬 */
+}
+
+.addBtn{
+  display: flex;
+  align-items: center;    /* 버튼 내부 내용(+)을 세로 중앙 정렬 */
+  justify-content: center; /* 버튼 내부 내용(+)을 가로 중앙 정렬 */
+  top: 50px;           /* 상단에서 10px */
+  right: 10px;         /* 우측에서 10px */
+  width: 100px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +108,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Budget-list {
+  position: relative; /* 부모 요소에 상대 위치 설정 */
 }
